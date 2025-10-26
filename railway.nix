@@ -1,3 +1,5 @@
+# force rebuild
+
 { pkgs }:
 pkgs.mkShell {
   buildInputs = [
