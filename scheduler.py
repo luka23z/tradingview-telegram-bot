@@ -12,8 +12,8 @@ def job():
     logger.info("Screenshot job completed.")
 
 # Schedule jobs for 2:00 AM and 2:00 PM CEST
-schedule.every().day.at("02:00").do(job)
-schedule.every().day.at("14:00").do(job)
+schedule.every(1).minutes.do(job)
+
 
 logger.info("Scheduler started. Jobs scheduled for 2:00 AM and 2:00 PM CEST daily.")
 
